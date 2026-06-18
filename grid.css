@@ -1,0 +1,81 @@
+.topsidebar{
+  background-color: blue;
+  text-align: center;
+
+}
+.bottomsidebar{
+  background-color: chartreuse;
+  text-align: center;
+
+}
+.topbarleft{
+  background-color: rgb(37, 228, 228);
+  text-align: center;
+
+}
+.topbarright{
+  background-color: brown;
+  text-align: center;
+}
+.rightsidebar{
+  background-color: darkslateblue;
+  text-align: center;
+}
+.cont1{
+  background-color: rgb(182, 14, 59);
+  text-align: center;
+
+}
+.cont2{
+  background-color: coral;
+  text-align: center;
+}
+.cont3{
+  background-color: blueviolet;
+  text-align: center;
+}
+.cont4{
+  background-color: darkgreen;
+  text-align: center;
+}
+
+.container{
+  height: 100vh;
+  background-color: black;
+  gap: 10px;
+  display: grid;
+  grid-template-areas: 
+  "ts tbl tbl tbr tbr"
+  "ts c1 c2 c2 rsd"
+  "bs c1 c2 c2 rsd"
+  "bs c3 c3 c4 rsd";
+
+
+}
+.topsidebar{
+  grid-area: ts;
+}
+.bottomsidebar{
+  grid-area: bs;
+}
+.topbarleft{
+  grid-area: tbl;
+}
+.topbarright{
+  grid-area: tbr;
+}
+.cont1{
+  grid-area: c1;
+}
+.cont2{
+  grid-area: c2;
+}
+.cont3{
+  grid-area: c3;
+}
+.c4{
+  grid-area: c4;
+}
+.rightsidebar{
+  grid-area: rsd;
+}

@@ -1,0 +1,53 @@
+.header,.footer{
+    background: linear-gradient(green);
+    color: black;
+    text-align: center;
+
+
+}
+
+.sidebar{
+    background: linear-gradient(red);
+    color: black;
+    text-align: center;
+
+
+}
+
+.con1,.con2,.con3{
+    background: linear-gradient(pink);
+    color: black;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "h h h"
+    "s c1 c1"
+    "s c2 c3"
+    "f f f ";
+    gap: 10px;
+
+}
+
+.header{
+    
+    grid-area: h;
+}
+.sidebar{
+    grid-area: s;
+}
+.con1{
+    grid-area: c1;
+}
+.con2{
+    grid-area: c2;
+}
+.con3{
+    grid-area: c3;
+}
+.footer{
+    grid-area: f;
+}
